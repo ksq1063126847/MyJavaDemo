@@ -1,0 +1,11 @@
+package DAL;
+import DAL.SerializeHelper;
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SerializeHelper demo = new SerializeHelper();
+		demo.SaveToFile(new { a="ksq",b="king"},"")
+	}
+
+}

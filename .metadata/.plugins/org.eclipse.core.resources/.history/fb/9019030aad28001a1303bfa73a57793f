@@ -1,0 +1,15 @@
+package DAL;
+import java.util.List;
+import DAL.SerializeHelper;
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SerializeHelper demo = new SerializeHelper();
+		List<String> list = new List<String>();
+		list.add("1");
+		
+		demo.SaveToFile(,"")
+	}
+
+}

@@ -1,0 +1,26 @@
+package form;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;;
+
+public class BtnEvent implements ActionListener {
+	private JButton btn;
+	
+	public BtnEvent (JButton btn) {
+		this.setBtn(btn);
+	}
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		btn.setText("hello world");		
+	}
+	
+	public JButton getBtn() {
+		return btn;
+	}
+	public void setBtn(JButton btn) {
+		this.btn = btn;
+	}
+
+}

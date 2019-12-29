@@ -1,0 +1,9 @@
+package model;
+
+public class Student implements java.io.Serializable   {
+
+	private static final long serialVersionUID = 1L;
+	//注意：建议将字段私有，而公开其属性访问。
+	public String Name;
+	public String ID;
+}

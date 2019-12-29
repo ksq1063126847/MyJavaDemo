@@ -1,0 +1,24 @@
+package DAL;
+
+import java.io.*;
+public class SerializeHelper 
+{
+	
+	public boolean SaveToFile(Object obj,String filePath) {
+		boolean result = false;		
+		try 
+		{
+			filePath = "/tmp/employee.ser";					
+			FileOutputStream fileOut = new FileOutputStream("filePath"); 			 
+			ObjectOutputStream out = new ObjectOutputStream(fileOut);
+			out.writeObject(obj);			
+			out.close();
+			fileOut.close();
+			result = true;
+		}catch(IOException ex) 
+		{
+			ex.printStackTrace();
+		}
+		return result;		
+	}
+}

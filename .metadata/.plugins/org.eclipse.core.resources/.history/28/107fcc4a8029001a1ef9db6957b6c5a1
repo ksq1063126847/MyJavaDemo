@@ -1,0 +1,18 @@
+package DAL;
+import java.util.ArrayList;
+import java.util.List;
+import DAL.SerializeHelper;
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SerializeHelper demo = new SerializeHelper();
+		List<String> list = new ArrayList<String>();
+		list.add("1");	
+		String filePath = "/tmp/employee.ser";
+		demo.SaveToFile(list,filePath);
+		
+		list = demo.DeSerializeFromFile(filePath,new List<String>().getClass() );
+	}
+
+}
