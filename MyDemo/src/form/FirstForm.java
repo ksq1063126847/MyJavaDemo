@@ -78,10 +78,13 @@ public class FirstForm {
 		//btnNew事件
 		btnNew.addActionListener(new ActionListener() {
 			@Override
-			public void actionPerformed(ActionEvent e) {				
+			public void actionPerformed(ActionEvent e) {	
+				
+				//在MainForm创建的是一个模态窗口
 				MainForm frm = new MainForm();
-				frm.ShowForm(frame,btnNew);	
-				//TODO:这里更新数据
+				frm.ShowForm(frame,btnNew);
+				
+				//TODO:这里更新数据，从文件读数据
 				
 				
 			}		
